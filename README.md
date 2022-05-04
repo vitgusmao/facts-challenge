@@ -32,8 +32,7 @@ facts = [
 
 Como é comum em um modelo de entidades, os atributos de uma entidade podem ter cardinalidade 1 ou N (muitos).
 
-Nesse schema,
-o atributo 'telefone' tem cardinalidade `one-to-many` e 'endereço' tem cardinalidade `one-to-one`.
+Nesse esquema, o atributo 'telefone' tem cardinalidade `one-to-many` e 'endereço' tem cardinalidade `one-to-one`.
 
 ```python
 schema = [
@@ -59,7 +58,7 @@ E o fato considerado vigente (ou ativo) é o último registrado, i.e.:
 
 <br>
 
-Para indicar a remoção (ou retração) de uma informação, o quarto elemento da tupla pode ser `False` para representar que a entidade não tem mais aquele valor associado aquele atributo.
+Para indicar a remoção (ou retração) de uma informação, o quarto elemento da tupla pode ser `False` para representar que a entidade não tem mais aquele valor associado àquele atributo.
 
 Levando isso em consideração nesse exemplo, os seguintes registros representam o histórico de telefones que 'joão' já possuiu:
 
@@ -71,7 +70,7 @@ Levando isso em consideração nesse exemplo, os seguintes registros representam
 ]
 ```
 
-Levando em consideração que o atributo 'telefone' possui cardinalidade 'many' o primeiro número de telefone foi adicionado, logo depois um novo número foi adicionado e em seguida o primeiro número foi removido. Então a lista de fatos vingentes dos telefones de joão seria:
+Levando em consideração que o atributo 'telefone' possui cardinalidade 'many' o primeiro número de telefone foi adicionado, logo depois um novo número foi adicionado e em seguida o primeiro número foi removido. Então a lista de fatos vigentes dos telefones de joão seria:
 
 ```python
 [
@@ -104,7 +103,7 @@ A entrada é constítuida de dois arquivos `facts.txt` e `schema.txt`, ambos em 
 
 ### Saída
 
-A saída é constítuida de um output no console. A saída deve estar formatada de forma que cada fato vingente esteja em uma linha. Cada fato deve estar disposto da seguinte forma `entidade---atributo---valor---operação` utilizando "`---`" como separador.
+A saída é constituída de um output no console. A saída deve estar formatada de forma que cada fato vigente esteja em uma linha. Cada fato deve estar disposto da seguinte forma `entidade---atributo---valor---operação` utilizando "`---`" como separador.
 
 ### Exemplo
 
