@@ -80,8 +80,6 @@ Levando em consideração que o atributo 'telefone' possui cardinalidade 'many' 
 
 ## Instruções
 
----
-
 O objetivo desse desafio é escrever uma função que retorne quais são os fatos vigentes sobre essas entidades.
 Ou seja, quais são as informações válidas no momento atual.
 A função deve receber `facts` (todos fatos registrados) e `schema` (o esquema de cardinalidade dos atributos) como argumentos.
